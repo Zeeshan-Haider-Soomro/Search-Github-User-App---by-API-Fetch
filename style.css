@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bodi{
+    background-color: #f6f8fa;
+    height: 88vh;
+}
+
+.bg{
+    background-color: #24292f;
+}
+
+.header{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    font-size: 35px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    gap: 20px;
+}
+input{
+    border: 0.1;
+}
