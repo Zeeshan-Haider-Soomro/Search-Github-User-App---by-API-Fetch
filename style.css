@@ -31,3 +31,6 @@
 input{
     border: 0.1;
 }
+.size {
+    height: 200px;
+}
