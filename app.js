@@ -1,10 +1,8 @@
 let main = document.getElementById('main');
 let userInput = document.getElementById('userInput');
 
-const searchProfile = () => {
-    // fetch('https://api.github.com/users/$')
+const searchProfile = (e) => {
     fetch(`https://api.github.com/users/${userInput.value.toLowerCase()}`)
-    // fetch('https://jsonplaceholder.typicode.com/users')
     .then((res)=>{
         return res.json();
     })
