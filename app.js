@@ -1,3 +1,8 @@
+
+let date = new Date()
+let yearChanger = document.querySelector("#yearChanger")
+yearChanger.innerText = `${date.getFullYear()}/${date.getMonth()+1}/${date.getDate()}`
+
 let main = document.getElementById('main');
 let userInput = document.getElementById('userInput');
 
