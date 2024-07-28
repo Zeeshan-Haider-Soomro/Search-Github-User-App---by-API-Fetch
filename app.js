@@ -5,8 +5,10 @@ yearChanger.innerText = `${date.getFullYear()}/${date.getMonth()+1}/${date.getDa
 
 let main = document.getElementById('main');
 let userInput = document.getElementById('userInput');
+let btn = document.getElementById("btn")
 
-const searchProfile = (e) => {
+
+const searchProfile = () => {
     fetch(`https://api.github.com/users/${userInput.value.toLowerCase()}`)
     .then((res)=>{
         return res.json();
@@ -28,7 +30,14 @@ const searchProfile = (e) => {
             `
         })
 
-    .catch((error)=>{
-        console.log(error);
+        .catch((error)=>{
+            console.log(error);
+        })
+    }
+    
+    userInput.addEventListener('keyup', (e)=>{
+        if(e.key === "Enter"){
+            searchProfile()
+        }
     })
-}
+    btn.addEventListener('click',searchProfile)
