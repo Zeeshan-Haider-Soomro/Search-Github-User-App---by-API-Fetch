@@ -43,3 +43,9 @@ input{
     background-color: #24292f;
     color: #f6f8fa;
 }
+.imgSize{
+    width: 100%;
+    /* height: 200px; */
+    text-align: center;
+    padding: 5px;
+}
