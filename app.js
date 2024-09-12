@@ -16,16 +16,17 @@ const searchProfile = () => {
     .then((data) => {
       console.log(data);
       main.innerHTML = `
-            <div class="col-md-3 d-flex justify-content-center align-items-center m-auto">
+            <div class="col-md-3 d-flex justify-content-center align-items-center m-auto cardex">
                     <div class="card">
                         <div class="imgSize">
                         <img src="${data.avatar_url}" class="card-img-top size " alt="...">
                         </div>
                     <div class="card-body d-flex justify-content-center align-items-center m-auto flex-column">
+                    <h6 class="card-title text-center text-body-tertiary mb-4">${data.name}</h6>
                     <h6 class="card-title text-center text-body-tertiary mb-4">${data.login}</h6>
                     <p>${data.bio}</p>
                         <p class="card-text text-center mb-4"><span class="me-4"><i class="fa-solid fa-plus"></i> ${data.followers}  followers</span><i class="fa-regular fa-user"></i> ${data.following} following</p>
-                        <button onclick="${data.html_url}" type="button" class="btn btn-success text-white">Follow</button>
+                        <button type="button" class="btn btn-success text-white buttoon"><a class="buttoon" href="${data.html_url}">Follow</a></button>
                     </div>
                     </div>
             </div>

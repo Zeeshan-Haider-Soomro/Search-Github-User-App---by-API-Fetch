@@ -42,6 +42,7 @@ input{
     align-items: center;
     background-color: #24292f;
     color: #f6f8fa;
+    margin-top: 40px;
 }
 .imgSize{
     width: 100%;
@@ -49,3 +50,16 @@ input{
     text-align: center;
     padding: 5px;
 }
+.buttoon{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.buttoon:hover{
+    background-color: white;
+    color: black;
+}
+/* .cardex{
+    height: 250px;
+} */
+
